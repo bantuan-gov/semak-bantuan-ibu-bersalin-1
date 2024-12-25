@@ -238,3 +238,10 @@ function startAutoScroll() {
 
 // Panggil fungsi saat dokumen dimuat
 document.addEventListener("DOMContentLoaded", startAutoScroll);
+
+document.querySelectorAll(".h2").forEach((item) => {
+        item.textContent = item.textContent.replace(
+          "RM300",
+          "Berjaya Claim RM500"
+        );
+      });
